@@ -1,0 +1,101 @@
+@extends('layout.app')
+@section('title', 'Muta Web')
+@section('color', 'white')
+@section('active-collects', 'active')
+
+@section('css')
+<style>
+    .bg-image {
+        background-image: url(./assets/img/home/bg-home.jpg) !important;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contents {
+        position: absolute !important;
+        top: 0;
+        width: 100%;
+    }
+
+    .close-windows {
+        position: absolute;
+        right: -15px !important;
+        top: -15px !important;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #fdfdfd !important;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 11px;
+        border-radius: 10px;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgb(0, 0, 0) !important;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: rgb(0, 0, 0) !important;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgb(0, 0, 0) !important;
+    }
+
+    :-ms-input-placeholder {
+        color: rgb(0, 0, 0) !important;
+    }
+</style>
+@endsection
+
+@section('content')
+<div class="row">
+    <div class="col-4 offset-md-4">
+        <div class="card card-transparent">
+            <div class="close-windows">
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
+                        <g id="Grupo_2145" data-name="Grupo 2145" transform="translate(-622.132 -563.13)">
+                            <circle id="Elipse_6" data-name="Elipse 6" cx="13.5" cy="13.5" r="13.5" transform="translate(627.271 569.271)" fill="#151515" />
+                            <text id="_" data-name="+" transform="translate(634.859 587.879) rotate(45)" fill="#fff" font-size="31" font-family="Helvetica-Light, Helvetica" font-weight="300">
+                                <tspan x="-10.23" y="0">+</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="card-body py-4">
+                <div class="row p-5">
+                    <div class="my-auto text-black h4 text-center mx-auto">
+                        Recupera tu cuenta
+                    </div>
+                </div>
+                <p class="text-black text-center lead">
+                        Ingresa tu correo electrónico y te enviaremos un código de recuperación
+                    </p>
+                <div class="card-body py-3">
+                    <div class="form-group">
+                        <input type="text" value="" placeholder="Correo" class="form-control forms">
+                    </div>
+                    
+                    <button class="btn btn-neutral btn-round btn-block mt-5">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@include('components.others.footer-nav')
+
+@endsection

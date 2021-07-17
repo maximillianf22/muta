@@ -1,0 +1,5 @@
+@include('components.card_expand.up.event')
+@include('components.card_expand.up.podcast')
+@include('components.card_expand.up.product')
+@include('components.card_expand.up.video')
+@include('components.card_expand.up.blog')
