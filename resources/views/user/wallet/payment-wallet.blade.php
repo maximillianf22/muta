@@ -65,15 +65,20 @@
                                 <a href="#"><u class="text-gray">Editar</u></a>
                             </div>
                         </div>
-                        <div class="card bg-dark shadow-sm mt-4" style="height:12vh">
+                        <div id="state2" class="card bg-dark shadow-sm mt-0 d-none" style="height:12vh">
+                            <div class="card-body px-5">
+                                <h3 id="message-box" class="h3 text-gray text-center font-weight-bold mb-0">Estamos verificando y confirmando tu compra.</h3>
+                            </div>
+                        </div>
+                        <div id="state1" class="card bg-dark shadow-sm mt-4" style="height:12vh">
                             <div class="card-body px-5">
                                 <h3 class="h1 text-@yield('color') text-center font-weight-bold mb-0">$300.000</h3>
                                 <p class="text-@yield('color') text-center">Mi disponible</p>
                             </div>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-success btn-round btn-lg text-dark mt-3 px-5" data-toggle="modal" data-target="#paymentModalConfirm">
-                                <h4 class="text-black mx-5 mb-0">Pagar</h4>
+                            <button onclick="show('state1', 'state2')" class="btn btn-success btn-round btn-lg text-dark mt-3 px-5" data-toggle="modal" data-target="#paymentModalConfirm">
+                                <h4 id="btn-pagar" class="text-black mx-5 mb-0">Pagar</h4>
                             </button>
                         </div>
                     </div>
@@ -134,5 +139,24 @@
     </div>
 </div>
 @include('components.others.footer-nav')
-@include('components.modals.modal-payment-confirm')
+@endsection
+
+@section('js')
+<script>
+    function show(container, main_place) {
+        const elemento = document.getElementById(container);
+        elemento.classList.toggle('d-none')
+
+        
+        const container_elemento = document.getElementById(main_place);
+        container_elemento.classList.toggle('d-none');
+
+        const btn = document.getElementById("btn-pagar");
+        btn.innerHTML = "Finalizando";
+        
+        setTimeout(() => {
+            document.getElementById("message-box").innerHTML = "Tu compra ha sido realizada exitosamente";
+        }, 1500);
+    }
+</script>
 @endsection
