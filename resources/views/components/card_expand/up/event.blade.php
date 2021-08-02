@@ -9,9 +9,6 @@
             </g>
         </svg>
     </div>
-
-    
-    
     <div class="w-100">
         <a href="#" class="showLoading">
             <div class="card card-blog card-background categories mx-auto rounded-lg active hover" data-animation="zooming">
@@ -22,7 +19,7 @@
                             <div class="col-2">
 
                             </div>
-                            <div class="col-10">
+                            <div class="col-10 pl-0">
                                 <div class="row">
                                     <div class="card-title text-@yield('color') font-weight-bold">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="54.954" height="54.958" viewBox="0 0 54.954 54.958">
@@ -43,10 +40,41 @@
                         </div>
                     </div>
                 </div>
-                <div id="register" class="card-body py-5 px-5 d-none"    >
-                    <h1>REGISTER WINDOW</h1>
-                </div>
+                <div id="register" class="card-body py-5 px-5 d-none">
+                    <div class="content-top m-auto">
+                        <div class="row">
+                            <div class="col-2">
 
+                            </div>
+                            <div class="col-10 pl-0">
+                                <div class="row">
+                                    <div class="card-title text-@yield('color') font-weight-bold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="55" viewBox="0 0 57 55">
+                                            <g id="Grupo_2365" data-name="Grupo 2365" transform="translate(-374 -177)">
+                                                <path id="T" d="M24.94,2.624a6,6,0,0,1,7.12,0L53.532,18.452a6,6,0,0,1,2.154,6.66L47.449,50.83A6,6,0,0,1,41.735,55H15.265a6,6,0,0,1-5.714-4.17L1.314,25.111a6,6,0,0,1,2.154-6.66Z" transform="translate(374 177)" fill="#9ac9f5" />
+                                                <path id="Icon_feather-check" data-name="Icon feather-check" d="M27.461,9,12.707,23.754,6,17.048" transform="translate(385.288 190.543)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            </g>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="pl-0 col-12">
+                                        <hr class="pl-0 border-info w-50">
+                                    </div>
+                                </div>
+                                <div class="row text-@yield('color') h2 display-3 text-justify pr-5">
+                                    Te has registrado al evento:<br>
+                                    Webinar Nuevas Formas de Consciencia
+                                </div>
+                                <hr class="border-info text-@yield('color')">
+                                <div class="row text-@yield('color') h2 display-3 text-justify pr-5">
+                                    Vamos a mutar!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="state1" class="card-body py-5 px-5" style=" padding-left: 10% !important; padding-right: 10% !important; overflow-y:auto;">
                     <div class="content-top text-left">
                         <div class="row">
@@ -102,12 +130,12 @@
 
 @section('js')
 <script>
-        function show(container, main_place) {
-            const elemento = document.getElementById(container);
-            elemento.classList.toggle('d-none')
+    function show(container, main_place) {
+        const elemento = document.getElementById(container);
+        elemento.classList.toggle('d-none')
 
-            const container_elemento = document.getElementById(main_place);
-            container_elemento.classList.toggle('d-none')
-        }
-    </script>
+        const container_elemento = document.getElementById(main_place);
+        container_elemento.classList.toggle('d-none')
+    }
+</script>
 @endsection

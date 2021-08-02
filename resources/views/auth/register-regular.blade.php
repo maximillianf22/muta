@@ -86,7 +86,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="col-8 my-auto text-black">
+                    <div class="col-8 my-auto text-black p-0 h4 m-0">
                         Soy hogar
                     </div>
                 </div>

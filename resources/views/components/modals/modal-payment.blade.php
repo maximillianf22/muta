@@ -22,7 +22,7 @@
                             <a href="/pagar-billetera" class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block">Billetera</a>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block">PayU</button>
+                            <a href="/pagar-payu" class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block">PayU</a>
                         </div>
                     </div>
                 </div>

@@ -27,23 +27,35 @@
                         <i class="fa fa-search mr-3"></i> Buscar
                     </a>
                 </li>
+                @if(Route::current()->getName() == 'home')
                 <li class="nav-item p-2 flex-fill bd-highlight text-right">
                     <a class="nav-link text-@yield('color')" href="/seleccionar">
                         Registro de mutantes
                     </a>
                 </li>
+                @else
                 <li class="dropdown nav-item p-2 flex-fill bd-highlight text-right">
-                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                        <i class="fa fa-cogs d-lg-none d-xl-none  text-black"></i> Getting started
+                    <a href="#" class="dropdown-toggle nav-link text-@yield('color')" data-toggle="dropdown">
+                        <i class="fa fa-cogs d-lg-none d-xl-none  text-black"></i> Catalina Muta
                     </a>
-                    <div class="dropdown-menu dropdown-with-icons dropdown-menu-right bg-translucid rounded-lg">
-                        <a href="./index.html" class="dropdown-item text-success">
-                             Components <i class="fa fa-user text-success float-right ml-3 mr-0"></i>
-                        </a>
-                    </div>
+                        <div class="dropdown-menu dropdown-with-icons dropdown-menu-right bg-translucid rounded-lg">
+                            <a href="/perfil" class="dropdown-item text-@yield('color')">
+                                Perfil <i class="fa fa-user text-@yield('color') float-right ml-3 mr-0"></i>
+                            </a>
+                            <a href="/billetera" class="dropdown-item text-black">
+                                Billetera <i class="fas fa-wallet text-black float-right ml-3 mr-0"></i>
+                            </a>
+                            <a href="/historial-chats" class="dropdown-item text-black">
+                                Historial <i class="fa fa-history text-black float-right ml-3 mr-0"></i>
+                            </a>
+                            <a href="/" class="dropdown-item text-black">
+                                Cerrar Sesión <i class="fa fa-sign-out-alt text-black float-right ml-3 mr-0"></i>
+                            </a>
+                        </div>
                 </li>
+                @endif
                 <li class="nav-item p-2 flex-fill bd-highlight text-right text-@yield('color')">
-                    <a class="nav-link @yield('color')" href="#" data-toggle="modal" data-target="#cartModal">
+                    <a class="nav-link text-@yield('color')" href="#" data-toggle="modal" data-target="#cartModal">
                         <svg id="Grupo_1715" data-name="Grupo 1715" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                             <path id="Trazado_2704" data-name="Trazado 2704" d="M2181.12,761.717l-15.99-1.2-1.06-2.558a1.746,1.746,0,0,0-1.638-.995h-1.409a1.516,1.516,0,1,0,0,3h.183l2.9,7,2.137,5.322c.574,1.356,1.06,2.725,3.163,2.725h9.229c1.747,0,3.708-1.141,4.068-2.725l1.582-7.834A2.969,2.969,0,0,0,2181.12,761.717Z" transform="translate(-2159.283 -756.96)" fill="#fff" />
                             <path id="Trazado_2705" data-name="Trazado 2705" d="M2217.355,892.865a2.979,2.979,0,1,0,2.979,2.979A2.979,2.979,0,0,0,2217.355,892.865Z" transform="translate(-2206.673 -873.868)" fill="#fff" />

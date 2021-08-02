@@ -118,7 +118,7 @@ body {
     z-index: 2 !important;
     color: black !important;
     background-color: #B7C394 !important;
-    border-radius: 3rem 0rem 0rem 0rem !important;
+    border-radius: 2rem 0rem 0rem 0rem !important;
     border-bottom: 1px solid black !important;
     border-top: 1px solid #B7C394 !important;
 }
@@ -127,7 +127,7 @@ body {
     z-index: 2 !important;
     color: black !important;
     background-color: #9C6E63 !important;
-    border-radius: 3rem 0rem 0rem 0rem !important;
+    border-radius: 2rem 0rem 0rem 0rem !important;
     border-bottom: 1px solid black !important;
     border-top: 1px solid #9C6E63 !important;
 }
@@ -136,7 +136,7 @@ body {
     z-index: 2 !important;
     color: black !important;
     background-color: #698197 !important;
-    border-radius: 3rem 0rem 0rem 0rem !important;
+    border-radius: 2rem 0rem 0rem 0rem !important;
     border-bottom: 1px solid black !important;
     border-top: 1px solid #698197 !important;
 }
@@ -145,7 +145,7 @@ body {
     z-index: 2 !important;
     color: black !important;
     background-color: #7E679B !important;
-    border-radius: 3rem 0rem 0rem 0rem !important;
+    border-radius: 2rem 0rem 0rem 0rem !important;
     border-bottom: 1px solid black !important;
     border-top: 1px solid #7E679B !important;
 }
@@ -154,7 +154,7 @@ body {
     z-index: 2;
     color: black !important;
     background-color: #836C53 !important;
-    border-radius: 0rem 0rem 0rem 3rem !important;
+    border-radius: 0rem 0rem 0rem 2rem !important;
     border-bottom: 1px solid black !important;
     border-top: 1px solid #836C53 !important;
 }
@@ -165,8 +165,8 @@ body {
 }
 
 .list-group {
-    background-color: rgb(146 150 146 / 49%) !important; /* Black w/opacity/see-through */
-    border-radius: 3rem 0rem 0rem 3rem !important;
+    background-color: rgb(150 150 150 / 50%) !important;
+    border-radius: 2rem 0rem 0rem 2rem !important;
 }
 
 path {
@@ -183,7 +183,7 @@ path {
     height: 100%;
     top: auto;
     border-radius: 15px;
-    background: #00000091;
+    background: #00000080;
 }
 
 card-background[data-animation=true]:hover .full-background, .card-background[data-animation=zooming]:hover .full-background {
@@ -221,14 +221,19 @@ card-background[data-animation=true]:hover .full-background, .card-background[da
     color: #9AC9F5!important;
 }
 
-a.text-blue:focus, a.text-danger:hover {
-    color: #2b50ca!important;
-}
-
 .close-windows {
     position: absolute;
     right: -4px;
     top: -17px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.close-windows-profile {
+    position: absolute;
+    right: 2px;
+    top: 15px;
+    cursor: pointer;
     z-index: 99;
     cursor: pointer;
 }
@@ -264,7 +269,11 @@ a.text-blue:focus, a.text-danger:hover {
 }
 
 .form-control.forms:focus {
-    border-color: #2b2b2b;
+    border-top: 0px;
+    border-bottom: 3px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #2b2b2b !important;
     background-color: transparent;
     box-shadow: none;
 }
@@ -295,6 +304,57 @@ a.text-blue:focus, a.text-danger:hover {
 .form-control.forms:focus+.input-group-append .input-group-text, .form-control.forms:focus+.input-group-prepend .input-group-text, .form-control.forms:focus~.input-group-append .input-group-text, .form-control.forms:focus~.input-group-prepend .input-group-text {
     border: 0px solid #161616;
     border-bottom: 1px solid #000;
+    border-left: none;
+}
+
+.form-control.forms-blue {
+    height: calc(2.25rem + 2px);
+    color: hsl(209deg 82% 78%);
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 0px solid #ffffff;
+    border-bottom: 1px solid #9AC9F5;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+}
+
+.form-control.forms-blue:focus {
+    border-top: 0px;
+    border-bottom: 3px solid #9AC9F5;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #9AC9F5 !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.input-group-append.blue .input-group-text, .input-group-prepend .input-group-text {
+    background-color: transparent;
+    border: 0px solid #9AC9F5;
+    border-bottom: 1px solid #9AC9F5;
+    border-radius: 0px;
+    color: #9AC9F5;
+    transition: color .3s ease-in-out,border-color .3s ease-in-out,background-color .3s ease-in-out;
+    border-left: transparent !important;
+}
+
+::-webkit-input-placeholder { color: rgb(0, 0, 0)!important; } 
+
+:-moz-placeholder { /* Firefox 18- */ color: rgb(0, 0, 0)!important; } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: rgb(0, 0, 0)!important; } 
+
+:-ms-input-placeholder { color: rgb(0, 0, 0)!important; }
+
+.form-control.forms-blue:focus+.input-group-append .input-group-text, .form-control.forms-blue:focus+.input-group-prepend .input-group-text, .form-control.forms-blue:focus~.input-group-append .input-group-text, .form-control.forms-blue:focus~.input-group-prepend .input-group-text {
+    border: 1px solid #9AC9F5;
+    border-left: none;
+}    
+
+.form-control.forms-blue:focus+.input-group-append .input-group-text, .form-control.forms-blue:focus+.input-group-prepend .input-group-text, .form-control.forms-blue:focus~.input-group-append .input-group-text, .form-control.forms-blue:focus~.input-group-prepend .input-group-text {
+    border: 0px solid #9AC9F5;
+    border-bottom: 1px solid #9AC9F5;
     border-left: none;
 }
 
@@ -383,7 +443,7 @@ a.text-blue:focus, a.text-danger:hover {
 }
 
 .bg-translucid {
-    background-color: rgb(146 150 146 / 49%) !important;
+    background-color: rgb(150 150 150 / 50%) !important;
 }
 
 .text-gray {
@@ -674,7 +734,7 @@ a.text-blue:focus, a.text-danger:hover {
 }
 
 .modal {
-    background-color: #15151580;
+    background-color: #151515a6;
 }
 
 .card-category {
@@ -695,3 +755,567 @@ a.text-blue:focus, a.text-danger:hover {
     display: none !important;
 }
 
+.text-blue:focus, a.text-blue:hover {
+    color: #2b50ca!important;
+}
+
+.bg-input {
+    background-color: #2C2C2C;
+    border: 0px solid #cad1d7;
+    font-size: 1rem;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border: 1px solid #cad1d7;
+    background-color: #2C2C2C;
+    box-shadow: none;
+}
+
+.no-border {
+    border: 0px !important;
+    border: 0rem !important;
+}
+
+.card-history {
+    border-radius: 20px 20px 20px 0px;
+    background-color: #2C2C2C !important;
+}
+
+.card label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.close-windows-slider {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.lh-1 {
+    line-height: 1 !important; 
+}
+
+chat_ib h5 {
+    font-size: 15px;
+    color: #464646;
+    margin: 0 0 8px 0;
+}
+.chat_ib h5 span {
+    font-size: 13px;
+    float: right;
+}
+.chat_ib p {
+    font-size: 14px;
+    color: #989898;
+    margin: auto;
+}
+.chat_img {
+    float: left;
+    width: 11%;
+}
+.chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 88%;
+}
+
+.chat_people {
+    overflow: hidden;
+    clear: both;
+}
+.chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 18px 16px 10px;
+}
+.inbox_chat {
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.active_chat {
+    background: #ebebeb;
+}
+
+.incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+}
+.received_msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+.received_withd_msg p {
+    background: #000000 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    font-weight: 400;
+}
+.time_date {
+    color: #747474;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+.received_withd_msg {
+    width: 57%;
+}
+.mesgs {
+    float: left;
+    padding: 30px 15px 0 25px;
+    width: 100%;
+}
+.sent_msg p {
+    background: #c5c5c5 none repeat scroll 0 0;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    font-weight: 400;
+}
+.outgoing_msg {
+    overflow: hidden;
+    margin: 26px 0 26px;
+}
+.sent_msg {
+    float: right;
+    width: 46%;
+}
+.input_msg_write input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+}
+
+.type_msg {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+}
+.msg_send_btn {
+    background: #05728f none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 33px;
+}
+.messaging {
+    padding: 0 0 50px 0;
+}
+.msg_history {
+    max-height: 67vh;
+    overflow-y: auto;
+}
+
+.nav-profile-auth {
+    color: rgb(0, 0, 0) !important;
+    border-radius: 0px !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+}
+
+.page-header.page-header-xs {
+    min-height: 65vh !important;
+    max-height: 440px !important;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.btn_chat,
+btn_chat:active {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    font-size: 13px;
+    border-radius: 50px;
+    font-weight: bold;
+    max-width: 80px !important;
+    min-width: 80px !important;
+    max-height: 80px !important;
+    min-height: 80px !important;
+    padding-top: 16px !important;
+    padding-left: 17px !important;
+    padding-right: 17px !important;
+}
+
+.see-more {
+    width: 300px;
+    position: absolute;
+    z-index: 3;
+    left: 37%;
+    margin-top: 7%;
+}
+
+.service-title {
+    width: 420px;
+    position: absolute;
+    z-index: 3;
+    left: 34%;
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        height: 120% !important;
+        overflow-y: auto;
+    }
+
+    .w-70-p{
+      width: 100%;
+    }
+}
+
+.w-70-p{
+  width: 70%;
+}
+
+.img-navbar {
+  width: 90%;
+}
+.nav-link-card-profile .nav-item .nav-link.active,
+.nav-link-card-profile .nav-item .nav-link.active:focus,
+.nav-link-card-profile .nav-item .nav-link.active:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.nav-pills .nav-item .nav-link.active,
+.nav-pills .nav-item .nav-link.active:focus,
+.nav-pills .nav-item .nav-link.active:hover {
+    background: linear-gradient(
+        -10deg
+        , #322398 0%, #322398 6%, #522DA5 17%, #A246C5 40%, #E75CE0 59%, #E966D6 65%, #EF81BA 76%, #F8AD8E 91%, #FFCC6E 100%);
+    color: #fff;
+    box-shadow: 0 5px 35px 0 rgb(0 0 0 / 30%);
+}
+
+.stars-profile {
+    position: absolute;
+    top: 3px;
+    right: 15px;
+}
+
+.text-xs {
+    font-size: 12px;
+}
+
+.nav-link-card-profile.active {
+    background-color: #000000;
+    border-radius: 1rem;
+    color: #ececec;
+}
+
+.nav-link-card-profile {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    color: #313131;
+}
+
+.nav-pills .nav-item .nav-link,
+.nav-pills .nav-item .nav-link:hover {
+    background-color: rgba(222, 222, 222, 0);
+}
+
+.chat_ib h5 {
+    font-size: 15px;
+    color: #464646;
+    margin: 0 0 8px 0;
+}
+.chat_ib h5 span {
+    font-size: 13px;
+    float: right;
+}
+.chat_ib p {
+    font-size: 14px;
+    color: #989898;
+    margin: auto;
+}
+.chat_img {
+    float: left;
+    width: 11%;
+}
+.chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 88%;
+}
+
+.chat_people {
+    overflow: hidden;
+    clear: both;
+}
+.chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 18px 16px 10px;
+}
+.inbox_chat {
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.active_chat {
+    background: #ebebeb;
+}
+
+
+.received_msg {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+.received_withd_msg p {
+    background: #656565 none repeat scroll 0 0;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    font-weight: 400;
+}
+.time_date {
+    color: #747474;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+.received_withd_msg {
+    width: 57%;
+}
+.mesgs {
+    float: left;
+    padding: 30px 15px 0 25px;
+    width: 100%;
+}
+.sent_msg p {
+    background: #c5c5c5 none repeat scroll 0 0;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+    padding: 5px 10px 5px 12px;
+    width: 100%;
+    font-weight: 400;
+}
+
+.sent_msg {
+    float: right;
+    width: 46%;
+}
+.input_msg_write input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+}
+
+.type_msg {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+}
+.msg_send_btn {
+    background: #05728f none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 33px;
+}
+.messaging {
+    padding: 0 0 50px 0;
+}
+.msg_history {
+    max-height: 76vh;
+    overflow-y: auto;
+}
+
+
+.form-control {
+    border-radius: 1.25rem;
+}
+
+
+.symbol.symbol-circle {
+    border-radius: 50%;
+}
+
+.symbol {
+    display: inline-block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 0.42rem;
+}
+
+.text-dark-75 {
+    color: #3F4254 !important;
+}
+
+.text-muted {
+    color: #B5B5C3 !important;
+}
+
+
+.symbol.symbol-40 > img {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.bg-chat {
+    background-color: #717171;
+}
+
+.btn-gray {
+    background: #969696;
+    background-image: linear-gradient(to bottom left,#969696,#969696,#969696);
+    background-size: 210% 210%;
+    background-position: 100% 0;
+    background-color: #969696;
+    transition: all .15s ease;
+    box-shadow: none;
+    color: #000;
+}
+
+.btn-blue.active, .btn-blue.active:focus, .btn-blue.active:hover, .btn-blue:active, .btn-blue:active:focus, .btn-blue:active:hover, .btn-blue:focus, .btn-blue:hover {
+    background-color: #969696!important;
+    background-image: linear-gradient(to bottom left,#969696,#d8d8d8,#969696)!important;
+    background-image: -moz-linear-gradient(to bottom left,#969696,#d8d8d8,#969696)!important;
+    color: rgb(0, 0, 0);
+    box-shadow: none;
+}
+
+.font-size-sm {
+    font-size:11px;
+}
+
+.card-transparent.rounded-xl {
+    border-radius: 30px !important;
+    border-radius: 2rem 2rem 2rem 2rem!important;
+}
+
+.form-group.no-border .form-control+.input-group-append .input-group-text:active, .form-group.no-border .form-control+.input-group-append .input-group-text:focus, .form-group.no-border .form-control+.input-group-prepend .input-group-text:active, .form-group.no-border .form-control+.input-group-prepend .input-group-text:focus, .form-group.no-border .form-control:active, .form-group.no-border .form-control:focus, .input-group.no-border .form-control+.input-group-append .input-group-text:active, .input-group.no-border .form-control+.input-group-append .input-group-text:focus, .input-group.no-border .form-control+.input-group-prepend .input-group-text:active, .input-group.no-border .form-control+.input-group-prepend .input-group-text:focus, .input-group.no-border .form-control:active, .input-group.no-border .form-control:focus {
+    border: medium none;
+    background-color: #232323;
+}
+
+.h4, h4 {
+    font-size: 1rem !important;
+}
+
+.nav-pills.nav-pills-success .nav-item .nav-link.active, .nav-pills.nav-pills-success .nav-item .nav-link.active:focus, .nav-pills.nav-pills-success .nav-item .nav-link.active:hover {
+    border-radius: 0px;
+    color: black !important;
+    background: #FFFE9C;
+    background-image: linear-gradient(to bottom left,#FFFE9C,#FFFE9C,#FFFE9C);
+    background-size: 210% 210%;
+    background-position: 100% 0;
+    box-shadow: none;
+}
+
+.display-1 {
+    font-size: 3.3rem !important;
+}

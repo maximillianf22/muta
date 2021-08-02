@@ -1,5 +1,5 @@
-<div class="modal fade" id="paymentModalConfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
-    <div class="modal-dialog modal-login bg-transparent">
+<div class="modal fade" id="drawModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog bg-transparent">
         <div class="modal-content bg-transparent">
             <button class="close-windows btn-link mb-5" type="button" class="close" data-dismiss="modal" aria-label="Close" style="top: -25px; right: -25px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
@@ -12,15 +12,17 @@
                 </svg>
             </button>
             <div class="card card-login card-transparent bg-transparent">
-                <div class="card-body p-3">
+                <div class="card-body p-3 py-5">
                     <div class="row my-auto text-center my-5 p-3">
-                        <div class="card bg-dark shadow-sm mt-4" style="height:12vh">
-                            <div class="card-body px-2">
-                                <p class=" h4 text-gray text-center font-weight-bold mb-0">Tu compra ha sido realizada exitosamente</p>
-                            </div>
+                        <div class="col-12 text-center text-@yield('color')">
+                            <h4 class="h2 text-@yield('color')">Retiro</h4>
+                            <p class="text-@yield('color')">Registre su entidad financiera</p>
                         </div>
-                        <div class="col-12">
-                            <button class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block" data-dismiss="modal">Regresar</button>
+                        <div class="col-6">
+                            <a href="/retirar-certificado" class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block px-0">Certificado bancario</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="/retirar-informacion" class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block px-0">Informacion de tu cuenta</a>
                         </div>
                     </div>
                 </div>

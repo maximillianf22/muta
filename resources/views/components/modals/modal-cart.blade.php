@@ -19,7 +19,7 @@
                         <path id="Trazado_2705" data-name="Trazado 2705" d="M2222.626,892.865a8.25,8.25,0,1,0,8.249,8.25A8.249,8.249,0,0,0,2222.626,892.865Z" transform="translate(-2193.045 -840.26)" fill="#151515" />
                         <path id="Trazado_2706" data-name="Trazado 2706" d="M2279,892.865a8.25,8.25,0,1,0,8.25,8.25A8.249,8.249,0,0,0,2279,892.865Z" transform="translate(-2231.612 -840.26)" fill="#151515" />
                     </svg>
-                    <button class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block">¡Explora nuestras mutaciones!</button>
+                    <a href="/comprar" class="btn btn-@yield('color') btn-round text-dark mt-5 btn-block">¡Explora nuestras mutaciones!</a>
                 </div>
             </div>
         </div>

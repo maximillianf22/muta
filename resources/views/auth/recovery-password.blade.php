@@ -38,7 +38,6 @@
         width: 11px;
         border-radius: 10px;
     }
-
 </style>
 @endsection
 
@@ -65,14 +64,19 @@
                     </div>
                 </div>
                 <p class="text-black text-center lead">
-                        Ingresa tu correo electrónico y te enviaremos un código de recuperación
-                    </p>
+                    Ahora escribe tu nueva contraseña
+                </p>
                 <div class="card-body py-3">
-                    <div class="form-group">
-                        <input type="text" value="" placeholder="Correo" class="form-control forms">
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control forms" placeholder="Contraseña">
+                        <div class="input-group-append forms">
+                            <span class="input-group-text"><i class="fa fa-eye"></i></span>
+                        </div>
                     </div>
-                    
-                    <a class="btn btn-neutral btn-round btn-block mt-5" href="/recuperar-codigo">Continuar</a>
+                    <div class="input-group mb-0">
+                        <input type="password" class="form-control forms" placeholder="Confirmar Contraseña">
+                    </div>
+                    <a class="btn btn-neutral btn-round btn-block mt-5" href="/login">Continuar</a>
                 </div>
             </div>
         </div>

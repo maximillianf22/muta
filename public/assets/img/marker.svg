@@ -1,0 +1,18 @@
+<svg id="Grupo_1728" data-name="Grupo 1728" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.205" height="63.205" viewBox="0 0 63.205 63.205">
+  <defs>
+    <filter id="Oval" x="5.327" y="7.665" width="52.324" height="52.324" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#222b45" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Elipse_2" data-name="Elipse 2" cx="31.603" cy="31.603" r="31.603" transform="translate(0 0)" fill="#0c090d" opacity="0.07"/>
+  <circle id="Elipse_1" data-name="Elipse 1" cx="21.821" cy="21.821" r="21.821" transform="translate(9.782 9.782)" fill="#0c090d" opacity="0.08"/>
+  <g id="Group" transform="translate(19.344 19.683)">
+    <g transform="matrix(1, 0, 0, 1, -19.34, -19.68)" filter="url(#Oval)">
+      <circle id="Oval-2" data-name="Oval" cx="9.029" cy="9.029" r="9.029" transform="matrix(0.89, -0.45, 0.45, 0.89, 19.34, 27.88)" fill="#0c090d" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

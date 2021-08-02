@@ -85,7 +85,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="col-8 my-auto text-black ">
+                    <div class="col-8 my-auto text-black h4 m-0 p-0">
                         Ya soy mutante
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="row">
                         <div class="text-right ml-auto pr-3">
-                            <a href="/recuperar-contraseña">
+                            <a href="/recuperar">
                                 <p class=" text-black">¿Olvido su contraseña?</p>
                             </a>
                         </div>
