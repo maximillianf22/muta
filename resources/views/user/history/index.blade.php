@@ -56,7 +56,7 @@
 @section('content')
 <div class="row" style="height: 75vh;">
     @include('components.others.side-nav')
-    <div class="col-10 pl-0">
+    <div class="col-lg-10 col-md-12 col-12 pl-0">
         <div class="close-windows-profile" onclick="history.back(-1)">
             <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                 <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">
@@ -90,7 +90,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6 pt-3 px-5">
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <a href="/historial-detalle">
                                 <div class="card-body px-5">
                                     <p class="text-@yield('color') mb-0">Consigna por: <b class="float-right font-weight-bold text-@yield('color')">$100.000</b></p>
@@ -98,7 +98,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <a href="/historial-detalle">
                                 <div class="card-body px-5">
                                     <p class="text-@yield('color') mb-0">Consigna por: <b class="float-right font-weight-bold text-@yield('color')">$100.000</b></p>
@@ -106,7 +106,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <a href="/historial-detalle">
                                 <div class="card-body px-5">
                                     <p class="text-@yield('color') mb-0">Consigna por: <b class="float-right font-weight-bold text-@yield('color')">$100.000</b></p>
@@ -116,11 +116,11 @@
                         </div>
                     </div>
                     <div class="col-6 pt-3 px-5">
-                        <div class="shadow-sm my-3" style="height:10vh">
+                        <div class="shadow-sm my-3" style="height:67px">
                         </div>
-                        <div class="my-3" style="height:10vh">
+                        <div class="my-3" style="height:67px">
                         </div>
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <a href="/historial-detalle">
                                 <div class="card-body px-5">
                                     <p class="text-@yield('color') mb-0">Compra en: <b class="float-right font-weight-bold text-@yield('color')">$5.000</b></p>

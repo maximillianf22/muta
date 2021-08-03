@@ -1,4 +1,4 @@
-<div class="col-2 my-auto">
+<div class="col-lg-2 d-md-none d-lg-block d-none my-auto">
     <ul class="list-unstyled">
         <a href="/perfil">
             <li>

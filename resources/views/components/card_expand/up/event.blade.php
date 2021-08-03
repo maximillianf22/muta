@@ -19,7 +19,7 @@
                             <div class="col-2">
 
                             </div>
-                            <div class="col-10 pl-0">
+                            <div class="col-lg-10 col-md-12 col-12 pl-0">
                                 <div class="row">
                                     <div class="card-title text-@yield('color') font-weight-bold">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="54.954" height="54.958" viewBox="0 0 54.954 54.958">
@@ -46,7 +46,7 @@
                             <div class="col-2">
 
                             </div>
-                            <div class="col-10 pl-0">
+                            <div class="col-lg-10 col-md-12 col-12 pl-0">
                                 <div class="row">
                                     <div class="card-title text-@yield('color') font-weight-bold">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="57" height="55" viewBox="0 0 57 55">

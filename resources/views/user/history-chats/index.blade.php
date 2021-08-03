@@ -21,7 +21,7 @@
 @section('content')
 <div class="row" style="height: 75vh;">
     @include('components.others.side-nav')
-    <div class="col-10 pl-0">
+    <div class="col-lg-10 col-md-12 col-12 pl-0">
         <div class="close-windows-profile" onclick="history.back(-1)">
             <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                 <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">

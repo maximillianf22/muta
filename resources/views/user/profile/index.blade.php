@@ -20,7 +20,7 @@
 @section('content')
 <div class="row" style="height: 75vh;">
     @include('components.others.side-nav')
-    <div class="col-10 pl-0">
+    <div class="col-lg-10 col-md-12 col-12 pl-0">
         <div class="close-windows-profile" onclick="history.back(-1)">
             <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                 <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">
@@ -40,10 +40,10 @@
                             Perfil / Tu Carrito
                         </h4>
                         <div class="row mb-3">
-                            <div class="col-2">
+                            <div class="col-lg-2 col-md-3 col-12">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="#" data-toggle="modal" data-target="#drawModal">Retirar</a>
                             </div>
-                            <div class="col-8">
+                            <div class="col-lg-8 col-md-6 col-12">
                                 <div class="mt-0" style="height:12vh">
                                     <div class="card-body px-5">
                                         <h3 class="h1 display-2 text-@yield('color') text-center font-weight-bold mb-0">$130.000</h3>
@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-2 col-md-3 col-12">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="/historial">Historial</a>
                             </div>
                         </div>
@@ -59,32 +59,32 @@
                             Opciones
                         </h4>
                         <div class="row mt-0">
-                            <div class="col-4 px-4 my-2">
+                            <div class="col-lg-4 col-md-6 px-xl-4 px-lg-3 px-md-1 my-2">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="/perfil-detalle">
                                     <i class="fa fa-user fa-lg mr-2"></i> Informacion Personal
                                 </a>
                             </div>
-                            <div class="col-4 px-4 my-2">
+                            <div class="col-lg-4 col-md-6 px-xl-4 px-lg-3 px-md-1 my-2">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="/historial-compras">
                                     <i class="fa fa-history fa-lg mr-2"></i> Historial de compras
                                 </a>
                             </div>
-                            <div class="col-4 px-4 my-2">
+                            <div class="col-lg-4 col-md-6 px-xl-4 px-lg-3 px-md-1 my-2">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="#">
                                     <i class="fa fa-list fa-lg mr-2"></i> Archivos
                                 </a>
                             </div>
-                            <div class="col-4 px-4 my-2">
+                            <div class="col-lg-4 col-md-6 px-xl-4 px-lg-3 px-md-1 my-2">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="/estadisticas">
                                     <i class="fa fa-chart-bar fa-lg mr-2"></i> Estadisticas
                                 </a>
                             </div>
-                            <div class="col-4 px-4 my-2">
+                            <div class="col-lg-4 col-md-6 px-xl-4 px-lg-3 px-md-1 my-2">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="/chat">
                                     <i class="fa fa-life-ring fa-lg mr-2"></i> Chat con soporte
                                 </a>
                             </div>
-                            <div class="col-4 px-4 my-2">
+                            <div class="col-lg-4 col-md-6 px-xl-4 px-lg-3 px-md-1 my-2">
                                 <a class="btn btn-@yield('color') btn-round text-dark mt-3 btn-block px-1" href="/eventos-crear">
                                     <i class="fa fa-users fa-lg mr-2"></i> Solicitar actividad
                                 </a>

@@ -1,4 +1,4 @@
-<div class="col-2 p-0 m-0">
+<div class="col-md-3 col-lg-2 p-0 m-0">
     <div class="sidebars d-none d-sm-none d-md-block w-100 mt-0">
         <div class="list-group w-100">
             <a href="/recolectar" type="button" class="w-100 text-center d-flex align-content-center text-center flex-wrap h-20 list-group-item list-group-item-action @yield('active-collects') border-dark success-color" style="border-radius: 2rem 0rem 0rem 0rem !important;">

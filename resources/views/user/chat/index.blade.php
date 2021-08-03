@@ -79,7 +79,7 @@
 @section('content')
 <div class="row" style="height: 75vh;">
     @include('components.others.side-nav')
-    <div class="col-10 pl-0">
+    <div class="col-lg-10 col-md-12 col-12 pl-0">
         <div class="close-windows-profile" onclick="history.back(-1)">
             <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                 <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">
@@ -202,7 +202,7 @@
                         <div class="px-2" style=" max-height: 52vh; overflow-y: auto;">
                             <h4 class="text-success text-center mt-4">Chats activos</h4>
                             <div class="row w-100 m-0" style="max-height: 38vh;">
-                                <div class="bg-dark w-100 my-2" style="min-height: 10vh;max-height: 10vh;border-radius: 2rem;">
+                                <div class="bg-dark w-100 my-2" style="min-height: 67px;max-height: 67px;border-radius: 2rem;">
                                     <div class="media product" style="margin-top: 1vh;margin-bottom: 1vh;padding-left: 1.2vh;">
                                         <a class="pull-left img-fluid rounded-circle shadow-sm " href="javascript:;" style="background-image: url(./assets/img/support-1.png);background-position: center;background-size: cover;height: 55px;width: 55px;"></a>
                                         <div class="media-body ml-2 my-auto p-0">
@@ -212,7 +212,7 @@
                                         <button class="btn btn-sm btn-success pull-right py-1 text-dark px-3 my-auto mr-3 rounded-lg" style="font-size: 10px;">Soporte</button>
                                     </div>
                                 </div>
-                                <div class="bg-dark w-100 my-2" style="min-height: 10vh;max-height: 10vh;border-radius: 2rem;">
+                                <div class="bg-dark w-100 my-2" style="min-height: 67px;max-height: 67px;border-radius: 2rem;">
                                     <div class="media product" style="margin-top: 1vh;margin-bottom: 1vh;padding-left: 1.2vh;">
                                         <a class="pull-left img-fluid rounded-circle shadow-sm " href="javascript:;" style="background-image: url(./assets/img/support-2.png);background-position: center;background-size: cover;height: 55px;width: 55px;"></a>
                                         <div class="media-body ml-2 my-auto p-0">
@@ -222,7 +222,7 @@
                                         <button class="btn btn-sm btn-success pull-right py-1 text-dark px-3 my-auto mr-3 rounded-lg" style="font-size: 10px;">Soporte</button>
                                     </div>
                                 </div>
-                                <div class="bg-dark w-100 my-2" style="min-height: 10vh;max-height: 10vh;border-radius: 2rem;">
+                                <div class="bg-dark w-100 my-2" style="min-height: 67px;max-height: 67px;border-radius: 2rem;">
                                     <div class="media product" style="margin-top: 1vh;margin-bottom: 1vh;padding-left: 1.2vh;">
                                         <a class="pull-left img-fluid rounded-circle shadow-sm " href="javascript:;" style="background-image: url(./assets/img/support-1.png);background-position: center;background-size: cover;height: 55px;width: 55px;"></a>
                                         <div class="media-body ml-2 my-auto p-0">
@@ -232,7 +232,7 @@
                                         <button class="btn btn-sm btn-success pull-right py-1 text-dark px-3 my-auto mr-3 rounded-lg" style="font-size: 10px;">Soporte</button>
                                     </div>
                                 </div>
-                                <div class="bg-dark w-100 my-2" style="min-height: 10vh;max-height: 10vh;border-radius: 2rem;">
+                                <div class="bg-dark w-100 my-2" style="min-height: 67px;max-height: 67px;border-radius: 2rem;">
                                     <div class="media product" style="margin-top: 1vh;margin-bottom: 1vh;padding-left: 1.2vh;">
                                         <a class="pull-left img-fluid rounded-circle shadow-sm " href="javascript:;" style="background-image: url(./assets/img/support-1.png);background-position: center;background-size: cover;height: 55px;width: 55px;"></a>
                                         <div class="media-body ml-2 my-auto p-0">

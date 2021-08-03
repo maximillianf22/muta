@@ -9,7 +9,7 @@
         background-image: url(./assets/img/home/bg-home.jpg) !important;
         filter: blur(20px);
         -webkit-filter: blur(20px);
-        height: 100vh;
+        height: 111vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -43,7 +43,7 @@
 
 @section('content')
 <div class="row">
-    <div class="col-4 offset-md-4">
+    <div class="col-12 col-md-6 col-lg-4 offset-lg-4 offset-md-3">
         <div class="card card-transparent">
             <div class="close-windows">
                 <a href="/">

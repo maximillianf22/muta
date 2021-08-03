@@ -9,7 +9,7 @@
         background-image: url(./assets/img/home/bg-2.jpg) !important;
         filter: blur(20px);
         -webkit-filter: blur(20px);
-        height: 100vh;
+        height: 111vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -214,7 +214,7 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-transparent pt-3 fixed-bottom col-10">
-    <div class="container d-flex align-items-end mb-2">
+    <div class="container-fluid d-flex align-items-end mb-2">
         <div class="navbar-translate">
 
         </div>

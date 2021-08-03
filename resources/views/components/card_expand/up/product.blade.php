@@ -71,7 +71,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div id="c-detalle" class="col-md-4 col-lg-4 col-xl-4 col-6 text-white py-3 text-center">
+        <div id="c-detalle" class="col-md-6 col-lg-4 col-xl-4 col-12 text-white py-3 text-center">
             <div class="close-windows" onclick="show('container_up','main_place_product_up')">
                 <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                     <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">
@@ -82,18 +82,18 @@
                     </g>
                 </svg>
             </div>
-            <button class="btn btn-neutral btn-lg btn-round text-gray py-3 mt-3">Logo Aliado</button>
+            <button class="btn btn-neutral btn-lg btn-round text-gray py-3 mt-4">Logo Aliado</button>
             <div>
-                <h5 class="h2 mt-3 text-left text-gray font-weight-bold mb-2">ID:201574</h5>
+                <h5 class="h2 mt-4 text-left text-gray font-weight-bold mb-3">ID:201574</h5>
                 <p class="text-gray text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos illo natus id laborum dolore laboriosam itaque assumenda ut consequatur culpa!</p>
-                <h5 class="h1 mt-3 text-gray font-weight-bold mb-2">$80.000</h5>
-                <div class="btn-group align-content-center mt-2 h-button" style="white-space: nowrap;">
+                <h5 class="h1 mt-4 text-gray font-weight-bold mb-3">$80.000</h5>
+                <div class="btn-group align-content-center mt-3 h-button" style="white-space: nowrap;">
                     <button class="btn mt-2 btn-gray btn-sm px-2 f-size"> <i class="fas fa-minus text-white"></i> </button>
                     <p class="px-4 mt-2 pt-1 pb-1 bg-white font-weight-bold mb-1">1</p>
                     <button class="btn mt-2 btn-gray btn-sm px-2 f-size"> <i class="fas fa-plus text-white"></i> </button>
                 </div>
             </div>
-            <a href="/carrito" class="btn btn-danger btn-round text-dark mt-3">Agregar al Carrito</a>
+            <a href="/carrito" class="btn btn-danger btn-round text-dark mt-4">Agregar al Carrito</a>
             <p></p>
         </div>
     </div>

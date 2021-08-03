@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-transparent pt-3 fixed-bottom col-10">
-    <div class="container d-flex align-items-end mb-2">
+    <div class="container-fluid d-flex align-items-end mb-2">
         <div class="navbar-translate">
             <h4 class="font-weight-bold text-@yield('color') mb-0">
                 Nuevas <br>

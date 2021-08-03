@@ -56,7 +56,7 @@
 @section('content')
 <div class="row" style="height: 75vh;">
     @include('components.others.side-nav')
-    <div class="col-10 pl-0">
+    <div class="col-lg-10 col-md-12 col-12 pl-0">
         <div class="close-windows-profile" onclick="history.back(-1)">
             <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                 <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">
@@ -83,7 +83,7 @@
                         <h4 class="font-weight-bold text-@yield('color')">A458154</h4>
                     </div>
                     <div class="col-5 px-3 py-4">
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <div class="close-windows" onclick="history.back(-1)">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
                                     <g id="Grupo_2212" data-name="Grupo 2212" transform="translate(-826 -116)">
@@ -97,13 +97,13 @@
                                 <h4 class="text-@yield('color') font-weight-bold">Recolección de material</h4>
                             </div>
                         </div>
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <div class="card-body px-5">
                                 <p class="text-@yield('color') mb-0">Tipo de material: <b class="float-right font-weight-bold text-@yield('color')">$100.000</b></p>
                                 <h4 class="text-@yield('color') font-weight-bold">Botellas de plástico</h4>
                             </div>
                         </div>
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <div class="card-body px-5">
                                 <p class="text-@yield('color') mb-0">¿Cúanto? <b class="float-right font-weight-bold text-@yield('color')">$100.000</b></p>
                                 <h4 class="text-@yield('color') font-weight-bold">$100.000</h4>
@@ -111,11 +111,11 @@
                         </div>
                     </div>
                     <div class="col-5 px-3 py-4">
-                        <div class="shadow-sm my-3" style="height:10vh">
+                        <div class="shadow-sm my-3" style="height:67px">
                         </div>
-                        <div class="my-3" style="height:10vh">
+                        <div class="my-3" style="height:67px">
                         </div>
-                        <div class="card card-history shadow-sm my-3" style="height:10vh">
+                        <div class="card card-history shadow-sm my-3" style="height:67px">
                             <div class="card-body px-5">
                                 <p class="text-@yield('color') mb-0">Fecha:</p>
                                 <h5 class="text-@yield('color') font-weight-bold">15 de febrero 2021 - 08:50 AM</h5>

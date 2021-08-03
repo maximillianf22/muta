@@ -9,7 +9,7 @@
         background-image: url(./assets/img/home/bg-home.jpg) !important;
         filter: blur(20px);
         -webkit-filter: blur(20px);
-        height: 100vh;
+        height: 111vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -1,7 +1,7 @@
 <div class=" mx-auto">
     @include('components.card_expand.down.places')
     <div id="container_down" class="row m-0 w-100">
-        <div class="col-md-4 col-lg-4 col-xl-4 col-6 p-1" onclick="show('container_down','main_place_blog_down')">
+        <div class="col-md-6 col-lg-4 col-xl-4 col-12 p-1" onclick="show('container_down','main_place_blog_down')">
             <a href="#" class="showLoading">
                 <div class="card card-blog card-background categories mx-auto rounded-lg" data-animation="zooming">
                     <div class="full-background" style="background-image: url('./assets/img/events/1.png')"></div>
@@ -24,7 +24,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-4 col-lg-4 col-xl-4 col-6 p-1" onclick="show('container_down','main_place_video_down')">
+        <div class="col-md-6 col-lg-4 col-xl-4 col-12 p-1" onclick="show('container_down','main_place_video_down')">
             <a href="#" class="showLoading">
                 <div class="card card-blog card-background categories mx-auto rounded-lg" data-animation="zooming">
                     <div class="full-background" style="background-image: url('./assets/img/events/1.png')"></div>
@@ -47,7 +47,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-4 col-lg-4 col-xl-4 col-6 p-1" onclick="show('container_down','main_place_video_down')">
+        <div class="col-md-6 col-lg-4 col-xl-4 col-12 p-1" onclick="show('container_down','main_place_video_down')">
             <a href="#" class="showLoading">
                 <div class="card card-blog card-background categories mx-auto rounded-lg" data-animation="zooming">
                     <div class="full-background" style="background-image: url('./assets/img/events/1.png')"></div>

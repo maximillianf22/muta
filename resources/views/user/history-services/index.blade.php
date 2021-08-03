@@ -21,7 +21,7 @@
 @section('content')
 <div class="row" style="height: 75vh;">
     @include('components.others.side-nav')
-    <div class="col-10 pl-0">
+    <div class="col-lg-10 col-md-12 col-12 pl-0">
         <div class="close-windows-profile" onclick="history.back(-1)">
             <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                 <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">
@@ -52,7 +52,7 @@
                                 <u>Ordenar por:</u>
                             </a>
                         </div>
-                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 10.7vh;border-radius: 1rem;">
+                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 67px;border-radius: 1rem;">
                             <div class="media product" style="padding-top: 1vh;padding-bottom: 1vh;padding-left: 1.2vh;">
                                 <a class="pull-left img-fluid rounded-circle shadow-sm " href="/historial-compras-detalle" style="background-image: url(./assets/img/support-1.png);background-position: center;background-size: cover;height: 60px;width: 60px;"></a>
                                 <div class="media-body ml-2 my-auto p-0">
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 10.7vh;border-radius: 1rem;">
+                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 67px;border-radius: 1rem;">
                             <div class="media product" style="padding-top: 1vh;padding-bottom: 1vh;padding-left: 1.2vh;">
                                 <a class="pull-left img-fluid rounded-circle shadow-sm " href="/historial-compras-detalle" style="background-image: url(./assets/img/support-2.png);background-position: center;background-size: cover;height: 60px;width: 60px;"></a>
                                 <div class="media-body ml-2 my-auto p-0">
@@ -94,7 +94,7 @@
                                 <u>Ordenar por:</u>
                             </a>
                         </div>
-                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 10.7vh;border-radius: 1rem;">
+                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 67px;border-radius: 1rem;">
                             <div class="media product" style="padding-top: 1vh;padding-bottom: 1vh;padding-left: 1.2vh;">
                                 <a class="pull-left img-fluid rounded-circle shadow-sm " href="/historial-compras-detalle" style="background-image: url(./assets/img/support.png);background-position: center;background-size: cover;height: 60px;width: 60px;"></a>
                                 <div class="media-body ml-2 my-auto p-0">
@@ -110,7 +110,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 10.7vh;border-radius: 1rem;">
+                        <div class="bg-dark w-100 my-4" style="min-height: 1.7vh;max-height: 67px;border-radius: 1rem;">
                             <div class="media product" style="padding-top: 1vh;padding-bottom: 1vh;padding-left: 1.2vh;">
                                 <a class="pull-left img-fluid rounded-circle shadow-sm " href="/historial-compras-detalle" style="background-image: url(./assets/img/support-3.png);background-position: center;background-size: cover;height: 60px;width: 60px;"></a>
                                 <div class="media-body ml-2 my-auto p-0">

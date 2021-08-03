@@ -71,7 +71,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div id="c-detalle" class="col-md-4 col-lg-4 col-xl-4 col-6 text-white py-3 text-center">
+        <div id="c-detalle" class="col-md-6 col-lg-4 col-xl-4 col-12 text-white py-3 text-center">
             <div class="close-windows" onclick="show('container_down','main_place_product_down')">
                 <svg xmlns="http://www.w3.org/2000/svg" width="37.477" height="37.477" viewBox="0 0 37.477 37.477">
                     <g id="Grupo_2140" data-name="Grupo 2140" transform="translate(-622.132 -563.13)">

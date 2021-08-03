@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-transparent pt-3">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-translate">
             <a class="navbar-brand" href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="195.498" height="48.054" viewBox="0 0 195.498 48.054">

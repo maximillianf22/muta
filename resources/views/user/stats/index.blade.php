@@ -95,7 +95,7 @@
 @section('content')
 <div class="row" style="height: 75vh;">
     @include('components.others.side-nav')
-    <div class="col-10 pl-0">
+    <div class="col-lg-10 col-md-12 col-12 pl-0">
         <div class="carousel-wrap w-100 mt-0 px-0">
             <div class="owl-carousel owl-theme mr-5 owl-loaded owl-drag px-4">
                 <div class="item" style=" max-width:53vh;">
@@ -109,7 +109,7 @@
                             </svg>
                         </div>
                     </a>
-                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 470px;">
+                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 467px;">
                         <div class="full-background" style="background-image: url('./assets/img/home/bg-home.jpg')"></div>
                         <div class="card-body pt-0 px-0">
                             <div class="content-top text-center bg-translucid w-100 p-3">
@@ -160,7 +160,7 @@
                             </svg>
                         </div>
                     </a>
-                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 470px;">
+                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 467px;">
                         <div class="full-background" style="background-image: url('./assets/img/events/1.png')"></div>
                         <div class="card-body pt-0 px-0">
                             <div class="content-top text-center bg-translucid w-100 p-3">
@@ -212,7 +212,7 @@
                             </svg>
                         </div>
                     </a>
-                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 470px;">
+                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 467px;">
                         <div class="full-background" style="background-image: url('./assets/img/home/bg-home.jpg')"></div>
                         <div class="card-body pt-0 px-0">
                             <div class="content-top text-center bg-translucid w-100 p-3">
@@ -263,7 +263,7 @@
                             </svg>
                         </div>
                     </a>
-                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 470px;">
+                    <div class="card card-blog card-background categories mx-auto rounded-xl" data-animation="zooming" style="height: 467px;">
                         <div class="full-background" style="background-image: url('./assets/img/events/1.png')"></div>
                         <div class="card-body pt-0 px-0">
                             <div class="content-top text-center bg-translucid w-100 p-3">

@@ -46,10 +46,10 @@
     <div id="loader-wrapper" class="contents">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-10 p-0">
+                <div class="col-12 col-md-9 col-lg-10 p-0">
                     @include('layout.components.navbar')
-                    <div class="container-fluid px-lg-5 p-2" style="overflow-y: auto; max-height: 85vh;">
-                        <div class="mx-4 mb-5">
+                    <div class="container-fluid px-lg-5 p-2" style="overflow-y: auto; max-height: 95vh;">
+                        <div class="mx-4 mb-3">
                             @yield('content')
                         </div>
                     </div>
